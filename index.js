@@ -8,7 +8,7 @@ app.use(express.json())
 const connect = async () => {
     try {
        await mongoose.connect(
-           "mongodb+srv://Ibragim:munaev230903ibra@cluster0.s3uug.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+           "mongodb+srv://Ibragim:munaev230903ibra@cluster0.s3uug.mongodb.net/onlineLibrary?retryWrites=true&w=majority"
            )
            console.log("Сервер успешно соединен с MongoDB")
            app.listen(4500, () => {
