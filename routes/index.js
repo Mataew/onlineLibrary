@@ -15,10 +15,9 @@ const connect = async () => {
             console.log("Сервер успешно запущен")
         })
     } catch (error) {
-        console.log(error.message)
+        console.log(error.message) 
     }
 }
-
 
 connect();
 
