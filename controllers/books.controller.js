@@ -36,4 +36,12 @@ module.exports.bookController = {
       res.json(e.message);
     }
   },
+  getAllbooks: async (req, res) => {
+    try {
+      const allBooks = Book.find().populate("genres userRent");
+      res.json(allBooks);
+    } catch (e) {
+      res.json(e.message);
+    }
+  },
 };
