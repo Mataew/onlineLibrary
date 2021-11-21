@@ -1,6 +1,5 @@
 const mongoose = require("mongoose")
 const { normalizeTypes } = require('express/lib/utils');
-
 const userSchema = mongoose.Schema({
   name: {
     type: String,
